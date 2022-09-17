@@ -1,0 +1,58 @@
+package objects;
+
+public class SharedVariable {
+
+	public static void main(String[] args)
+	{
+		Student stud1 = new Student(); //new student is object & stud1 is reference to the object
+		stud1.sharedVariable = 100;
+		System.out.println(stud1.sharedVariable);
+		
+		Student stud2 = new Student();
+		stud2.sharedVariable = 34;
+		System.out.println(stud2.sharedVariable);
+		
+		System.out.println(stud1.getAge());	
+		Student stud3 = new Student();
+		stud3.sharedVariable = 124;
+		System.out.println(stud3.sharedVariable);
+		System.out.println(stud1.sharedVariable);
+		System.out.println(stud2.sharedVariable);
+	}
+
+}
+
+class Student {
+	private int age; //instance variable
+	private String name;
+	private char gender;
+	
+	public static int sharedVariable;
+	
+	//Setters & getters for above 3 variable by source option
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) 
+	{
+		if(age <= 0 || age >= 140) // control the age from negative value 
+		{
+			age = 0;	
+		}
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public char getGender() {
+		return gender;
+	}
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+	
+	
+}

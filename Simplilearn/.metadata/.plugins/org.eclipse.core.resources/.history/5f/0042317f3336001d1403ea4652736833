@@ -1,0 +1,20 @@
+package objects;
+
+public class Setters_Gettes {
+
+	public static void main(String[] args)
+	{
+		Student s = new Student();
+		s.age = 10;
+		System.out.println(s.age);
+
+	}
+
+}
+
+class Student {
+	int age;
+	private String name;
+	private char gender;
+	
+}

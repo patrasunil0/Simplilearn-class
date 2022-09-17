@@ -1,0 +1,50 @@
+package objects;
+
+public class Setters_Gettes {
+
+	public static void main(String[] args)
+	{
+		Student stud = new Student(); //New varialble
+		stud.setAge(168);
+		System.out.println(stud.getAge());
+		
+
+	}
+
+}
+
+class Student {
+	private int age; //instance variable
+	private String name;
+	private char gender;
+	
+	//Setters & getters for above 3 variable by source option
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) 
+	{
+		if(age <= 0 || age >= 140) // control the age from negative value 
+		{
+			age = 0;	
+		}
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public char getGender() {
+		return gender;
+	}
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+	
+	
+	
+	
+	
+}

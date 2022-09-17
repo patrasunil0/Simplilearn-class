@@ -1,0 +1,18 @@
+package objects;
+
+public class SharedVariable 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		
+	}
+}
+
+class Student {
+	private int age;
+	private String Name;
+	private char gender;
+	
+}

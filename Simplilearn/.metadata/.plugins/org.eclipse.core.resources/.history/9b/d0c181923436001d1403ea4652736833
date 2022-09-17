@@ -1,0 +1,32 @@
+package objects;
+
+public class Setters_Gettes {
+
+	public static void main(String[] args)
+	{
+		Student stud = new Student(); //New varialble
+		stud.setAge(10);
+		System.out.println(stud.getAge());
+		
+
+	}
+
+}
+
+class Student {
+	private int age; //instance variable
+	private String name;
+	private char gender;
+	
+	//Setters & Gettes
+	
+	public void setAge(int ageValue)
+	{   //local variable
+		this.age = ageValue;
+	}
+	public int getAge() 
+	{
+		return age;
+	}
+	
+}
